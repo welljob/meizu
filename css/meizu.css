@@ -1,0 +1,525 @@
+/* 初始化代码 */
+body,
+div,
+p,
+span,
+a,
+img,
+input,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+i,
+em {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+input {
+    border: 0px none;
+    outline: 0px none;
+}
+
+body {
+    background-color: #ffffff;
+    font: 12px/100% "microsoft yahei";
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.w {
+    width: 1240px;
+    margin: 0px auto;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+/* header的css代码 */
+.header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #efefef; 
+}
+
+.header .nav {
+    height: 80px;
+    position: relative;
+}
+
+.header .nav .logo {
+    position: absolute;
+    top: 25px;
+}
+
+.header .nav .logo a {
+    width: 115px;
+    height: 20px;
+    background-image: url("../需要的图片/logo.png");
+    display: block;
+    text-indent: -999px;
+}
+
+.header .nav .content {
+    position: absolute;
+    left: 437px;
+}
+
+.header .nav .content li {
+    float: left;
+    line-height: 80px;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.header .nav .content a:hover {
+    color: #00c3f5;
+}
+
+.header .nav .icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 75px;
+    bottom: 26px;
+}
+
+.header .nav .icon a {
+    width: 24px;
+    height: 24px;
+    background-image: url("../需要的图片/icon.png");
+    /* background-size: cover; */
+    /* cover:等比例放大，直到容器填满 */
+    background-size: contain;
+    /* contain:等比例放大，直到触碰到容器一边 */
+    display: block;
+}
+
+
+
+/* main的css代码 */
+.main {
+    width: 100%;
+}
+
+.column {
+    background-color: #7086af;
+}
+
+.main .banner {
+    height: 480px;
+    position: relative;
+}
+
+.main .banner .picture {
+    width: 1240px;
+    height: 480px;
+    background: url("../需要的图片/banner.png");
+    position: absolute;
+    left: 50%;
+    margin-left: -620px;
+}
+
+.main .banner .left-sidebar {
+    width: 244px;
+    height: 480px;
+    position: absolute;
+    font-size:14px;
+    background-color: rgba(255,255,255,.3);
+}
+
+.main .banner .left-sidebar ul {
+    position: absolute;
+    top: 50%;
+    margin-top: -232px;
+}
+
+.main .banner .left-sidebar a {
+    width: 214px;
+    height: 58px;
+    font-size: 14px;
+    line-height: 58px;
+    display: block;
+    padding-left: 30px;
+}
+
+.main .banner .left-sidebar a:hover {
+    background-color: #fff;
+}
+
+.main .column .banner .button a:first-child {
+    width: 36px;
+    line-height: 58px;
+    position: absolute;
+    left: 244px;
+    top: 50%;
+    margin-top: -29px;
+    text-align: center;
+}
+
+.main .column .banner .button a:last-child {
+    width: 36px;
+    line-height: 56px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -28px;
+    text-align: center;
+}
+
+.main .column .banner .button i.icon-fanhui,
+.main .column .banner .button i.icon-gengduo {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main .column .banner .button a:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+.main .column .banner .point {
+    width: 90px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 13px;
+    overflow: hidden;
+}
+
+.main .column .banner .point a {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.main .column .banner .point a:last-child {
+    margin-right: 0px;
+}
+
+.main .column .banner .point a:hover {
+    border: 0px none;
+    width: 10px;
+    height: 10px;
+    background-color: #00c3f5;
+}
+
+.main .product-introduction {
+    height: 140px;
+    margin-top: 6px;
+}
+
+.main .product-introduction li {
+    float: left;
+    width: 244px;
+    height: 140px;
+    background-color: #f9f9f9;
+    margin-right: 5px;
+}
+
+.main .product-introduction li:last-child {
+    margin-right: 0px;
+}
+
+.main .product-introduction li:first-child a {
+    float: left;
+    width: 122px;
+    height: 70px;
+}
+
+.main .product-introduction .m-code i {
+    width: 30px;
+    height: 30px;
+    background: url("../需要的图片/sq.png") -1px 0px;
+    display: block;
+    margin: 15px auto 0px;
+}
+
+.main .product-introduction li:first-child p {
+    font-size: 13px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main .product-introduction .change-new i {
+    width: 30px;
+    height: 30px;
+    background: url("../需要的图片/sq.png") -1px -40px;
+    display: block;
+    margin: 15px auto 0px;
+}
+
+.main .product-introduction .insurance i {
+    width: 30px;
+    height: 30px;
+    background: url("../需要的图片/sq.png") -1px -80px;
+    display: block;
+    margin: 15px auto 0px;
+}
+
+.main .product-introduction .buy-order i {
+    width: 30px;
+    height: 30px;
+    background: url("../需要的图片/sq.png") -1px -120px;
+    display: block;
+    margin: 15px auto 0px;
+}
+
+.main .product-introduction li:nth-child(2) {
+    background: url("../需要的图片/pro7plus.jpg");
+    background-size: contain;
+}
+
+.main .product-introduction li:nth-child(3) {
+    background: url("../需要的图片/mei5s.jpg");
+    background-size: contain;
+}
+
+.main .product-introduction li:nth-child(4) {
+    background: url("../需要的图片/ep51.png");
+    background-size: contain;
+}
+
+.main .product-introduction li:nth-child(5) {
+    background: url("../需要的图片/breakhabit.png");
+    background-size: contain;
+}
+
+.main .hot-recommend {
+    height: 93px;
+    position: relative;
+}
+
+.main .hot-recommend .content {
+    font-size: 25px;
+    position: absolute;
+    top: 45px;
+}
+
+.main .hot-recommend div {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.main .hot-recommend a:first-child {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #666;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main .hot-recommend a:last-child {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #999;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main .hot-recommend a:last-child {
+    margin-left: 5px;
+}
+
+.main .hot-recommend i.icon-fanhui {
+    color: #666;
+    font-size: 20px;
+}
+
+.main .hot-recommend i.icon-gengduo {
+    color: #999;
+    font-size: 20px;
+}
+
+.main .product {
+    height: 339px;
+    border-left: 1px solid #efefef;
+    margin-bottom: 40px;
+}
+
+.main .product li {
+    float: left;
+    width: 247px;
+    height: 338px;
+    border-right: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.main .product li a {
+    display: block;
+    /* a标签不用块级化，它的子盒子的图片也能撑开宽高 */
+    margin-top: 38px;
+    text-align: center;
+}
+
+
+.main .product .title {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+.main .product .text {
+    color: #999999;
+}
+
+
+.main .product .price {
+    margin-top: 10px;
+    /* 不会出现垂直塌陷 */
+    display: block;
+    color: red;
+    font-size: 14px;
+}
+
+.main .product li:first-child .photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 36px;
+    background-image: url("../需要的图片/dianyuanshipei.png");
+}
+
+.main .product li:nth-child(2) .photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 36px;
+    background-image: url("../需要的图片/meizushouhuan.png");
+}
+
+.main .product li:nth-child(3) .photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 36px;
+    background-image: url("../需要的图片/lvxingshoudai.png");
+}
+
+.main .product li:nth-child(4) .photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 36px;
+    background-image: url("../需要的图片/lanyaerji.png");
+}
+
+.main .product li:nth-child(5) .photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0px auto 36px;
+    background-image: url("../需要的图片/erji.png");
+}
+
+.main .guanggao {
+    height: 120px;
+    background-image: url("../需要的图片/meiX.jpg");
+}
+
+
+.footer {
+    width: 100%;
+    height: 111px;
+    border-top: 1px solid #efefef;
+}
+
+.footer .bg {
+    width: 1240px;
+    height: 111px;
+    position: relative;
+}
+
+.footer .bg .content {
+    position: absolute;
+    top: 25px;
+}
+
+.footer .bg .content li {
+    float: left;
+    margin-right: 15px;
+    line-height: 18px;
+}
+
+.footer .bg .content li a {
+    color: #999999;
+}
+
+.footer .bg .content .line {
+    width: 1px;
+    height: 18px;
+    background-color: #999;
+}
+
+
+
+
+.footer .bg .b-icon {
+    position: absolute;
+    bottom: 34px;
+    right: 0px;
+    line-height: 18px;
+}
+
+.footer .b-icon li {
+    float: left;
+    margin-left: 10px;
+}
+
+.footer .bg .b-icon .line {
+    width: 1px;
+    height: 18px;
+    background-color: #999;
+}
